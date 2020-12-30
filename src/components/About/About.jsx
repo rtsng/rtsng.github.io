@@ -5,6 +5,8 @@ import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 
+var me = require('./placeholder.png')
+var myres = require('./Ryan Tsang - Resume 2020.pdf')
 const About = () => {
   const { about } = useContext(PortfolioContext);
   const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
@@ -29,9 +31,11 @@ const About = () => {
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
+              {/* <div className="about-wrapper__image">
                 <AboutImg alt="profile picture" filename={img} />
-              </div>
+                
+              </div> */}
+              <img src= {me} className = "me"/>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
@@ -39,32 +43,35 @@ const About = () => {
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                    "Welcome to my website! I'm an aspiring software developper who is interested in machine learning, robotics, and quantum computing. I've been coding for a few years now and i have experience with java, python, html, css and js."}
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                    "When im not coding, I enjoy running, cooking, playing music, and modern tetris."}
                 </p>
-                <p className="about-wrapper__info-text">
+                {/* <p className="about-wrapper__info-text">
                   {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
-                </p>
-                {resume && (
-                  <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      Resume
-                    </a>
-                  </span>
-                )}
+                </p> */}
+                <div className="textright">
+                  {resume && (
+                    <span className="d-flex mt-3">
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn cta-btn--resume"
+                        href={myres}
+                      >
+                        Resume 
+                      </a>
+                    </span>                  
+                  )}
+                </div>
               </div>
             </Fade>
           </Col>
         </Row>
       </Container>
+      
     </section>
   );
 };

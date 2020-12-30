@@ -4,9 +4,9 @@
   display: flex;
   align-items: center;
   border-bottom: 0px;
-  background: $white-color;
+  background: $dark-grey;
   font-weight: 400;
-  color: $dark-blue-text;
+  color: $white-color;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
   top: 0;
@@ -36,7 +36,7 @@
     }
     @include respond(tab-port) {
       font-size: 3.6rem;
-      text-align: center;
+      text-align: left;
     }
     @include respond(phone) {
       font-size: 3.5rem;
@@ -51,7 +51,7 @@
     display: flex;
 
     @include respond(tab-port) {
-      justify-content: center;
+      justify-content: left;
     }
 
     & a {
@@ -61,5 +61,15 @@
         font-size: 2rem;
       }
     }
+  }
+}
+.to-about i {
+  color: $mute-pink;
+  margin: 1rem 0 $default-font-size;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(5px);
   }
 }

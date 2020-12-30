@@ -1,6 +1,6 @@
 #projects {
-  background-color: $white-color;
-  color: $dark-blue-text;
+  background-color: $dark-grey;
+  color: $off-white;
   margin-top: -15rem;
   padding-top: 15rem;
 
@@ -17,11 +17,14 @@
     }
 
     .row {
-      margin-bottom: 8rem;
+      margin-bottom: 0rem;
 
       @include respond(phone) {
-        margin-bottom: 4rem;
+        margin-bottom: 0rem;
       }
+    }
+    .col {
+      text-align: left;
     }
 
     &__text {
@@ -74,4 +77,67 @@
       }
     }
   }
+}
+.cards {
+  background-color: $off-white;
+  color: $light-black;
+
+}
+.cardheader {
+  color: $mute-pink;
+  font-weight: 700;
+  font-size: 0.8em;
+  text-align: right;
+
+  
+}
+.rightsidetext {
+  text-align: left;
+  font-size: 1.4em;
+}
+.butttest{
+  background-color: $light-black;
+}
+.projtitle{
+  font-size: 2em;
+  color: $mute-pink;
+  text-align: center;
+}
+.smallbutt {
+  font-size: 1em;
+  display: block;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+.gap{
+  margin-top: 50px;
+}
+.border {
+  border-left: 6px $off-white;
+  height: 100%;
+  @include respond(phone) {
+    border-left: 6px $dark-grey;
+  }
+  @include respond(tab-land) {
+    border-left: 6px $dark-grey;
+  }
+}
+.rev{
+  display: block;
+  width: 452px;
+  height: 172px;
+}
+.heat{
+  width: 308px;
+  height: 172px;
+  display: inline-block;
+}
+.micro{
+  width: 183.7px;
+  height: 172px;
+  display: inline-block;
+}
+.gap10{
+  margin-top: 2em;
 }

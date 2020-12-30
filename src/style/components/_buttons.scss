@@ -62,15 +62,15 @@
 
 /* Resume Style */
 .cta-btn--resume {
-  color: $white-color;
-  border: 2px solid $white-color;
+  color: $mute-pink;
+  border: 2px solid $mute-pink;
 
   &::after {
-    background: $white-color;
+    background: $mute-pink;
   }
 
   &:hover {
-    color: $secondary-color;
+    color: $white-color;
     text-decoration: none;
 
     &::after {
@@ -78,6 +78,26 @@
     }
   }
 }
+
+.cta-btn--resume2 {
+  color: $off-white;
+  border: 2px solid $off-white;
+  position: relative;
+  &::after {
+    background: $off-white;
+  }
+  
+
+  &:hover {
+    color: $light-black;
+    text-decoration: none;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
 
 /* Arrow Button */
 .up i {

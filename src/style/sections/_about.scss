@@ -1,15 +1,17 @@
+
 #about {
-  background-color: $primary-color;
-  background-image: linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
-  );
-  color: $white-color;
+  background-color: $dark-grey;
+  // background-image: linear-gradient(
+  //   180deg,
+  //   $light-black 0%,
+  //   $dark-grey 100%
+  // );
+  
+  color: $mute-pink;
   height: 100%;
   border-top: 0px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  // -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  // clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
 
   @include respond(tab-land) {
@@ -38,6 +40,7 @@
     }
 
     &__info {
+      color: $off-white;
       display: flex;
       height: 100%;
       justify-content: center;
@@ -52,7 +55,7 @@
 
         @include respond(tab-port) {
           font-size: 1.5rem;
-          text-align: center;
+          text-align: left;
         }
         @include respond(phone) {
           font-size: 1.6rem;
@@ -78,4 +81,12 @@
       }
     }
   }
+}
+.textright{
+  text-align: right;
+}
+.me {
+  // margin-top: 100px;
+  height: 300px;
+  width: 288px;
 }
